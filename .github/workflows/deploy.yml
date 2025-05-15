@@ -60,7 +60,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/root/projects/nodejsfullcourse/NodeJS-Microservices
+            cd /home/root/projects/social-media-microservice
             git pull origin master
             docker-compose down
             docker-compose up -d
